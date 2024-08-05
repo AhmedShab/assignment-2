@@ -20,9 +20,9 @@ This website serves as a basic template for a business website. It includes a ho
    git clone https://github.com/AhmedShab/assignment_2.git
    ```
 2. Navigate to the project directory:
-  ```sh
+   ```sh
     cd <project-directory>
-  ```
+   ```
 
 ### Usage
 
