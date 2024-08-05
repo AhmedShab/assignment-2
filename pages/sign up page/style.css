@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #3882F6;
+  --secondary-color: #1F2937;
+  --background-color: #E5E7EB;
+  --light-background-color: #F9FAF8;
+}
+
+/* how to use variables */
+/* color: var(--primary-color); */
