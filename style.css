@@ -115,7 +115,7 @@ h1 {
   font-size: 18px;
 }
 
-/* Clients section Styling */
+/* services section Styling */
 
 h2 {
   font-size: 36px;
@@ -123,7 +123,7 @@ h2 {
   color: var(--secondary-color);
 }
 
-.clients-section {
+.services-section {
   padding: 0 8rem;
   display: flex;
   flex-direction: column;
@@ -131,14 +131,14 @@ h2 {
   align-items: center;
 }
 
-.clients-container {
+.services-container {
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.clients-card {
+.services-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,7 +146,7 @@ h2 {
   max-width: 220px;
 }
 
-.clients-card div {
+.services-card div {
   border: 2px solid var(--primary-color);
   border-radius: 12px;
   height: 220px;
@@ -158,7 +158,7 @@ h2 {
   transition: all 700ms;
 }
 
-.clients-card div:hover {
+.services-card div:hover {
   background-color: rgba(56, 130, 246, 0.5);
   transition: all 700ms;
   transform: scale(1.1);
