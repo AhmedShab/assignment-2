@@ -22,8 +22,20 @@ button {
   outline-style: none;
   border: 0;
 }
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 button:hover {
   cursor: pointer;
+  opacity: 80%;
+  transition: opacity 500ms, transform 500ms;
+  transform: scale(1.1);
 }
 /* Header styling */
 
@@ -42,9 +54,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--light-background-color);
+  color: var(--background-color);
+  font-size: 18px;
   padding: 5px 8rem;
   z-index: 1000; /* Ensure header is on top of other content */
+}
+
+header div p {
+  color: var(--light-background-color);
+  font-size: 24px;
 }
 
 .logo-container,
@@ -82,13 +100,22 @@ ul {
 
 h1 {
   color: var(--light-background-color);
+  font-size: 48px;
+  font-weight: 900;
 }
 
 .hero-section p {
   color: var(--background-color);
+  font-size: 18px;
 }
 
 /* Clients section Styling */
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--secondary-color);
+}
 
 .clients-section {
   padding: 0 8rem;
@@ -101,6 +128,8 @@ h1 {
 .clients-container {
   display: flex;
   gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .clients-card {
@@ -108,4 +137,16 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: 220px;;
+}
+
+.clients-card div {
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  height: 220px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
