@@ -32,6 +32,11 @@ a:active {
   color: inherit;
   cursor: pointer;
 }
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--background-color);
+}
 button:hover {
   cursor: pointer;
   opacity: 80%;
@@ -138,7 +143,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 220px;;
+  max-width: 220px;
 }
 
 .clients-card div {
