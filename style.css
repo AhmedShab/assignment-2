@@ -90,6 +90,7 @@ header div p {
 
 ul {
   list-style-type: none;
+ list-style: none;
 }
 
 /* Hero section Styling */
@@ -121,6 +122,7 @@ h2 {
   font-size: 36px;
   font-weight: 900;
   color: var(--secondary-color);
+  text-align: center;
 }
 
 .services-section {
@@ -136,6 +138,8 @@ h2 {
   gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .services-card {
@@ -190,8 +194,18 @@ h2 {
     height: 250px;
     padding-top: 50px;
   }
-   h1{
+  h1 {
     font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .services-section {
+    padding: 0 5rem;
+  }
+  .services-container {
+      margin: 0;
+
   }
 }
 
@@ -207,15 +221,23 @@ h2 {
     padding: 5px 3rem;
     font-size: 12px;
   }
- 
+
   .register-container {
     display: none;
   }
   .hero-section {
     padding: 5rem 3rem;
   }
-   .hero-section img {
+  .hero-section img {
     height: 250px;
     padding-top: 50px;
   }
+  .services-section {
+    padding: 0 3rem;
+  }
+  .services-container{
+      margin: 0;
+
+  }
+
 }
