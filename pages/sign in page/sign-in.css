@@ -16,7 +16,7 @@ body {
 }
 
 main{
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 /* Main section styling */
 .signin-container {
@@ -70,17 +70,7 @@ main{
   border-color: var(--primary-color); 
 }
 
-.form-footer {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-}
 
-.form-footer a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-size: 14px;
-}
 
 .signin-form button {
   width: 100%;
@@ -140,4 +130,14 @@ main{
   justify-content: flex-end;
   margin-bottom: 1rem;
   color: var(--primary-color);
+}
+
+footer{
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
 }
