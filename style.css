@@ -32,13 +32,6 @@ body {
   color: #999;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-}
-
 .content {
   display: flex;
   flex-direction: row;
@@ -91,8 +84,6 @@ body {
   background-color: var(--primary-color);
   color: #fff;
   align-items: center;
-  width: 977px;
-  height: 186px;
   border-radius: 5px;
   justify-content: center;
 }
