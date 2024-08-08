@@ -16,28 +16,33 @@ body {
 }
 
 .quote-section {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--background-color);
 }
 
 .quote-section p {
   margin: 0;
-  color: #555;
+  width: 50%;
+  font-size: 36px;
+  font-style: italic;
+  color: var(--secondary-color);
 }
 
 .quote-section .author {
-  margin-top: 10px;
-  font-style: italic;
-  color: #999;
+  text-align: right;
 }
 
-.content {
+.middle-section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 1200px;
   width: 100%;
+  margin-top: 100px;
 }
 
 .image-container {
@@ -48,8 +53,7 @@ body {
 }
 
 .image-container img {
-  max-width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .text-content {
@@ -68,14 +72,14 @@ body {
   line-height: 1.6;
 }
 
-.text-content .button {
+.learn-more-btn {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: #007BFF;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 10px;
 }
 
 .footer-call-to-action {
