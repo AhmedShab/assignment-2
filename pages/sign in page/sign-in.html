@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,20 @@
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="sign-in.css">
 </head>
+
 <body>
     <header>
-        <nav class="nav-bar">
-            <span class="logo">Header Logo</span>
-            <ul class="nav-menu">
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../contact page/index.html">Contact Us</a></li>
-              <li><a href="#laceholder-for-now">Dashboard</a></li>
-              <li><a href="#laceholder-for-now">FAQ</a></li>
+        <div class="logo-container">
+            <img src="../../images/logo.png" alt="Business logo">
+            <p>
+                Header Logo
+            </p>
+        </div>
+        <nav>
+            <ul class="nav-container">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -27,16 +33,15 @@
                 <h2>Sign in to your account</h2>
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Password" required>
-                <footer class="form-footer">
-                    <a href="../forgot-password/forgot-password.html">Forgot your password?</a>
-                </footer>
+                <a id="forget-password" href="../forgot-password/forgot-password.html">Forgot your password?</a>
                 <button type="submit">Continue</button>
                 <p>Don't have an account? <a href="../sign up page/sign-up.html">Sign up</a></p>
             </form>
         </section>
     </main>
     <footer>
-        <p>Copyright &copy;</p>
+        Copyright ©
     </footer>
 </body>
+
 </html>

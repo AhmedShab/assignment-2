@@ -9,6 +9,10 @@ body {
   min-height: 100vh;
 }
 
+main{
+  margin-top: 5rem;
+}
+
 .logo {
   color: white;
   font-size: 20px;
@@ -139,4 +143,15 @@ body {
   .signup-form button {
       font-size: 14px;
   }
+}
+
+
+footer{
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
 }
