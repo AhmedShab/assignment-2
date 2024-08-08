@@ -176,14 +176,28 @@ h2 {
   .logo-container img {
     height: 25px;
   }
-   .logo-container p{
+  .logo-container p {
     font-size: 14px;
+  }
+  .hero-section {
+    padding: 5vh 5rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-section img {
+    height: 250px;
+    padding-top: 50px;
+  }
+   h1{
+    font-size: 30px;
   }
 }
 
 /* Responsive styles for mobile screens */
 @media (max-width: 480px) {
-  .logo-container p{
+  .logo-container p {
     font-size: 12px;
   }
   .logo-container img {
@@ -193,8 +207,15 @@ h2 {
     padding: 5px 3rem;
     font-size: 12px;
   }
+ 
   .register-container {
     display: none;
   }
-
+  .hero-section {
+    padding: 5rem 3rem;
+  }
+   .hero-section img {
+    height: 250px;
+    padding-top: 50px;
+  }
 }
