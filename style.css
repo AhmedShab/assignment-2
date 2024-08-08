@@ -163,3 +163,38 @@ h2 {
   transition: all 700ms;
   transform: scale(1.1);
 }
+
+/* Responsive styles for tablet screens */
+@media (max-width: 768px) {
+  header {
+    padding: 5px 5rem;
+    font-size: 14px;
+  }
+  .register-container {
+    display: none;
+  }
+  .logo-container img {
+    height: 25px;
+  }
+   .logo-container p{
+    font-size: 14px;
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+  .logo-container p{
+    font-size: 12px;
+  }
+  .logo-container img {
+    height: 20px;
+  }
+  header {
+    padding: 5px 3rem;
+    font-size: 12px;
+  }
+  .register-container {
+    display: none;
+  }
+
+}
