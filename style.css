@@ -145,3 +145,8 @@ body {
   border-radius: 10px;
   white-space: nowrap;
 }
+
+
+button:hover {
+  cursor: pointer;
+}
