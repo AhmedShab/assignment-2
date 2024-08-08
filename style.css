@@ -111,24 +111,37 @@ body {
 
 .call-to-action-section {
   display: flex;
-  flex-direction: column;
   background-color: var(--primary-color);
-  color: #fff;
-  align-items: center;
+  color: var(--background-color);
   border-radius: 5px;
   justify-content: center;
   margin-top: 250px;
+  align-items: end;
+  width: 70%;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .call-to-action-section > p {
   text-align: left;
 }
 
-.call-to-action-section .button {
-  display: inline-block;
+.call-to-action-section > div {
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 667px) {
+  .call-to-action-section > div {
+    margin-right: 0px;
+  }
+}
+
+.sign-up-btn {
   padding: 10px 20px;
   background-color: var(--primary-color);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
+  border-radius: 10px;
+  white-space: nowrap;
 }
