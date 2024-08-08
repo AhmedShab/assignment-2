@@ -1,8 +1,162 @@
 :root {
-  --primary-color: #3882F6;
-  --secondary-color: #1F2937;
-  --background-color: #E5E7EB;
-  --light-background-color: #F9FAF8;
+  --primary-color: #3882f6;
+  --secondary-color: #1f2937;
+  --background-color: #e5e7eb;
+  --light-background-color: #f9faf8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-form-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  max-width: 510px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+.contact-heading {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.contact-text {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.input-style,
+.textarea-style {
+  width: 100%;
+  border-radius: 18px;
+  border: none;
+  background-color: #f2f1f1;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 2px solid #1f2937;
+  }
+}
+
+.input-style {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+}
+
+.textarea-style {
+  height: 212px;
+  resize: none;
+  padding: 28px 0 0 28px;
+}
+
+.button-style {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 100%;
+  height: 54px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: 0.4s;
+    background-color: green;
+  }
+}
+
+.info-container {
+  width: 100%;
+  height: 437px;
+  margin-top: 125px;
+  background-color: var(--light-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+.info-small-container {
+  max-width: 407px;
+  width: 90%;
+  height: 223px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.info-description-container-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-description-container {
+  display: flex;
+  margin-top: 26px;
+  gap: 9px;
+  font-size: 16px;
+
+  & > p {
+    align-self: center;
+  }
+}
+
+.geo-text {
+  width: 190px;
+  line-height: 30px;
+  margin-top: -6px;
+}
+
+@media screen and (max-width: 950px) {
+  .info-container {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .info-small-container {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .info-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .info-small-container > h2 {
+    font-size: 18px;
+  }
+
+  .info-description-container {
+    font-size: 13px;
+  }
 }
 
 /* how to use variables */
