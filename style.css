@@ -181,33 +181,46 @@ h2 {
 
 .quote-section {
   display: flex;
-  padding: 50px;
+  padding: 0 8rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   background-color: var(--background-color);
 }
 
 .quote-section p {
   margin: 0;
-  width: 50%;
+  width: 70%;
   font-size: 36px;
   font-style: italic;
   color: var(--secondary-color);
 }
 
+.quote-section p:first-child {
+  margin-top: 50px;
+}
+
 .quote-section .author {
   text-align: right;
+  margin-bottom: 50px;
 }
 
 .middle-section {
   display: flex;
+  padding: 0 8rem;
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  width: 100%;
   margin-top: 100px;
+}
+
+.call-to-action-section {
+  padding: 0 8rem;
+  margin-top: 100px;
+}
+
+.text-content {
+  width: 50%;
 }
 
 /* Responsive styles for tablet screens */
@@ -216,7 +229,7 @@ h2 {
     font-size: 18px;
   }
   .quote-section {
-    padding: 25px;
+    padding: 0 5rem;
   }
   header {
     padding: 5px 5rem;
@@ -253,6 +266,19 @@ h2 {
   }
   .services-container {
     margin: 0;
+  }
+  .middle-section {
+    padding: 0 5rem;
+    flex-direction: column;
+  }
+  .text-content {
+    width: 84%;
+  }
+  .call-to-action-container {
+    flex-direction: column;
+  }
+  .call-to-action-section {
+    padding: 0 5rem;
   }
 }
 
@@ -300,18 +326,8 @@ h2 {
   }
 }
 
-@media screen and (max-width: 667px) {
-  .middle-section {
-    flex-direction: column;
-  }
-}
-
 .image-container img {
   height: 300px;
-}
-
-.text-content {
-  width: 50%;
 }
 
 .text-content h3 {
@@ -325,45 +341,21 @@ h2 {
   line-height: 1.6;
 }
 
-@media screen and (max-width: 667px) {
-  .learn-more-btn-container {
-    text-align: right;
-  }
-}
-
-.call-to-action-section {
+.call-to-action-container {
   display: flex;
   background-color: var(--primary-color);
   color: var(--background-color);
-  border-radius: 5px;
+  border-radius: 10px;
   justify-content: center;
-  margin-top: 250px;
-  align-items: end;
-  width: 70%;
-  padding: 30px 15px;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (max-width: 667px) {
-  .call-to-action-section {
-    margin-top: 83px;
-  }
+  padding: 30px;
 }
 
 
 .call-to-action-section > p {
   text-align: left;
-}
-
-.call-to-action-section > div {
-  margin-right: 100px;
-}
-
-@media screen and (max-width: 667px) {
-  .call-to-action-section > div {
-    margin-right: 0px;
-  }
 }
 
 .sign-up-btn {
@@ -373,6 +365,7 @@ h2 {
   border: 2px solid var(--background-color);
   border-radius: 10px;
   white-space: nowrap;
+  margin-left: 10%;
 }
 
 .call-to-action-head{
