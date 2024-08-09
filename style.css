@@ -213,7 +213,7 @@ h2 {
 /* Responsive styles for tablet screens */
 @media (max-width: 768px) {
   .quote-section p {
-    font-size: 25px;
+    font-size: 18px;
   }
   .quote-section {
     padding: 25px;
@@ -344,6 +344,13 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 667px) {
+  .call-to-action-section {
+    margin-top: 83px;
+  }
+}
+
 
 .call-to-action-section > p {
   text-align: left;
