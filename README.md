@@ -11,10 +11,8 @@ This project is a business website designed to provide information about the com
 - [Setup](#setup)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-- [Hosting](#hosting)
 - [File Structure](#file-structure)
+- [Contributing](#contributing)
 
 ## Description
 The website includes information about the company's services and products. It also provides a contact page for inquiries and pages for user sign-in and sign-up.
