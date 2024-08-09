@@ -16,8 +16,9 @@ body {
 }
 
 main{
-  margin-top: 6rem;
+  flex: 1;
 }
+
 /* Main section styling */
 .signin-container {
   display: flex;
@@ -139,5 +140,8 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
