@@ -1,3 +1,7 @@
+# Website link
+
+The website can be viewed in this link: https://ahmedshab.github.io/assignment-2/
+
 # Business Website
 
 This project is a business website designed to provide information about the company's services, products, and contact details. The website includes various pages such as the home page, contact page, sign-in page, and sign-up page.
