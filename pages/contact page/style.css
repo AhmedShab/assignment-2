@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 8rem;
 }
 
 .contact-form {
@@ -25,6 +26,7 @@
   flex-direction: column;
   gap: 50px;
   margin-top: 70px;
+  box-sizing: border-box;
 }
 
 .contact-heading {
@@ -91,11 +93,13 @@
   justify-content: center;
   align-items: center;
   gap: 90px;
+  padding: 0 8rem;
+  box-sizing: border-box;
 }
 
 .info-small-container {
   max-width: 407px;
-  width: 90%;
+  width: 100%;
   height: 223px;
   background-color: #fff;
   border-radius: 20px;
@@ -144,7 +148,21 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 768px) {
+  .contact-form-container,
+  .info-container {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form-container,
+  .info-container {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
   .info-icon {
     width: 20px;
     height: 20px;
