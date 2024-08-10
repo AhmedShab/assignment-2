@@ -210,6 +210,10 @@ h2 {
   margin-top: 100px;
 }
 
+.text-content {
+  width: 50%;
+}
+
 /* Responsive styles for tablet screens */
 @media (max-width: 768px) {
   .quote-section p {
@@ -285,6 +289,24 @@ h2 {
   .services-container {
     margin: 0;
   }
+  .quote-section {
+    padding: 0 3rem;
+  }
+  .quote-section p {
+    padding: 10px;
+    width: unset;
+  }
+  .author {
+    width: 100%;
+  }
+  .text-content {
+    padding: 0 3rem;
+    width: unset;
+  }
+  .call-to-action-section {
+    padding: 0 3rem;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
@@ -308,10 +330,6 @@ h2 {
 
 .image-container img {
   height: 300px;
-}
-
-.text-content {
-  width: 50%;
 }
 
 .text-content h3 {
