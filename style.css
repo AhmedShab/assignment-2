@@ -151,7 +151,7 @@ h2 {
   max-width: 220px;
 }
 
-.services-card div {
+.services-card figure {
   border: 2px solid var(--primary-color);
   border-radius: 12px;
   height: 220px;
@@ -166,7 +166,7 @@ h2 {
   }
 }
 
-.services-card div:hover {
+.services-card figure:hover {
   background-color: rgba(56, 130, 246, 0.5);
   transition: all 700ms;
   transform: scale(1.1);
@@ -188,7 +188,7 @@ h2 {
   background-color: var(--background-color);
 }
 
-.quote-section p {
+.quote-section p,blockquote {
   margin: 0;
   width: 70%;
   font-size: 36px;
@@ -196,7 +196,7 @@ h2 {
   color: var(--secondary-color);
 }
 
-.quote-section p:first-child {
+.quote-section blockquote {
   margin-top: 50px;
 }
 
@@ -205,14 +205,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-.middle-section {
-  display: flex;
-  padding: 0 8rem;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 100px;
-}
+
 
 .call-to-action-section {
   padding: 0 8rem;
@@ -225,7 +218,7 @@ h2 {
 
 /* Responsive styles for tablet screens */
 @media (max-width: 768px) {
-  .quote-section p {
+  .quote-section p,blockquote {
     font-size: 18px;
   }
   .quote-section {
@@ -267,10 +260,7 @@ h2 {
   .services-container {
     margin: 0;
   }
-  .middle-section {
-    padding: 0 5rem;
-    flex-direction: column;
-  }
+
   .text-content {
     width: 84%;
   }
@@ -310,6 +300,24 @@ h2 {
   }
   .services-container {
     margin: 0;
+  }
+  .quote-section {
+    padding: 0 3rem;
+  }
+  .quote-section p,blockquote {
+    padding: 10px;
+    width: unset;
+  }
+  .quote-section .author {
+    width: 100%;
+  }
+  .text-content {
+    padding: 0 3rem;
+    width: unset;
+  }
+  .call-to-action-section {
+    padding: 0 3rem;
+    flex-direction: column;
   }
 }
 
