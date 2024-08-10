@@ -5,9 +5,8 @@
   --light-background-color: #f9faf8;
 }
 
-* {
+body {
   margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -16,6 +15,17 @@
 *::after {
   box-sizing: inherit;
 }
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 18px;
+  outline-style: none;
+  border: 0;
+  transition: opacity 500ms, transform 500ms;
+}
+
 a,
 a:hover,
 a:focus,
@@ -23,6 +33,25 @@ a:active {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--background-color);
+}
+button:hover {
+  cursor: pointer;
+  opacity: 80%;
+  transition: opacity 500ms, transform 500ms;
+  transform: scale(1.1);
+}
+/* Header styling */
+
+/* Ensure all elements use border-box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 header {
@@ -35,12 +64,51 @@ header {
   align-items: center;
   color: var(--background-color);
   font-size: 18px;
-  padding: 15px 8rem;
+  padding: 5px 8rem;
   box-sizing: border-box;
   z-index: 1000; /* Ensure header is on top of other content */
 }
 
-.logo-container {
+header div p {
+  color: var(--light-background-color);
+  font-size: 24px;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--secondary-color);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: var(--background-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown p {
+  font-size: 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--primary-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover a {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.logo-container,
+.register-container {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -54,11 +122,6 @@ header {
   display: flex;
   gap: 25px;
   align-items: center;
-}
-
-ul {
-  list-style-type: none;
-  list-style: none;
 }
 
 .contact-form-container {
@@ -199,6 +262,17 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+  .dropdown {
+    display: block; /* Show dropdown on mobile */
+  }
+
+  .dropdown:hover .nav-container a:not(:first-child) {
+    display: block; /* Show other links when dropdown is hovered */
+  }
+
   .contact-form-container,
   .info-container {
     padding: 0 5rem;
@@ -242,7 +316,13 @@ footer {
 /* Responsive styles for tablet screens */
 @media (max-width: 768px) {
   header {
-    padding: 10px 5rem;
+    padding: 5px 5rem;
+    font-size: 14px;
+  }
+  .logo-container img {
+    height: 25px;
+  }
+  .logo-container p {
     font-size: 14px;
   }
 }

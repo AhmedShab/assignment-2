@@ -1,7 +1,92 @@
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--background-color);
+}
+button:hover {
+  cursor: pointer;
+  opacity: 80%;
+  transition: opacity 500ms, transform 500ms;
+  transform: scale(1.1);
+}
+/* Header styling */
+
+/* Ensure all elements use border-box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--background-color);
+  font-size: 18px;
+  padding: 5px 8rem;
+  z-index: 1000; /* Ensure header is on top of other content */
+}
+
+header div p {
+  color: var(--light-background-color);
+  font-size: 24px;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--secondary-color);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: var(--background-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown p {
+  font-size: 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--primary-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover a {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
 /* General body styling */
 body {
   background-color: var(--light-background-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -9,7 +94,7 @@ body {
   min-height: 100vh;
 }
 
-main{
+main {
   flex: 1;
 }
 
@@ -113,40 +198,77 @@ main{
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+  .dropdown {
+    display: block; /* Show dropdown on mobile */
+  }
+
+  .dropdown:hover .nav-container a:not(:first-child) {
+    display: block; /* Show other links when dropdown is hovered */
+  }
+  header {
+    padding: 5px 5rem;
+    font-size: 14px;
+  }
+  .register-container {
+    display: none;
+  }
+  .logo-container img {
+    height: 25px;
+  }
+  .logo-container p {
+    font-size: 14px;
+  }
+
   .signup-form {
-      padding: 20px;
+    padding: 20px;
   }
 
   .name-fields {
-      flex-direction: column;
-      gap: 0;
+    flex-direction: column;
+    gap: 0;
   }
 
   .name-fields input {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
+  .logo-container p {
+    font-size: 12px;
+  }
+  .logo-container img {
+    height: 20px;
+  }
+  header {
+    padding: 5px 3rem;
+    font-size: 12px;
+  }
+
+  .register-container {
+    display: none;
+  }
   .signup-container {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 
   .signup-form {
-      padding: 15px;
+    padding: 15px;
   }
 
   .signup-form h2 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .signup-form button {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
 
-
-footer{
+footer {
   background-color: var(--secondary-color);
   color: var(--background-color);
   padding: 2rem 0rem;

@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technovation - Sign In</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    />
-    <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="sign-in.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="logo-container">
-        <img src="../../images/logo.png" alt="Technovation logo" />
-        <p>Technovation</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technovation - Sign In</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="sign-in.css" />
+</head>
+
+<body>
+  <header>
+    <picture class="logo-container">
+      <img src="../../images/logo.png" alt="Technovation logo" />
+      <p>Technovation</p>
+    </picture>
+    <nav class="nav-container">
+      <a href="../../index.html#hero-section">Home</a>
+      <a href="../../index.html#services">Service</a>
+      <a href="../contact page/index.html">Contact us</a>
+      <a href="../sign up page/sign-up.html">
+        <button>
+          Sign Up
+        </button>
+      </a>
+    </nav>
+    <div class="dropdown">
+      <p href="#">More</p>
+      <div class="dropdown-content">
+        <a href="../../index.html#hero-section">Home</a>
+        <a href="../../index.html#services">Service</a>
+        <a href="../contact page/index.html">Contact us</a>
+        <a href="../sign up page/sign-up.html">Sign Up</a>
       </div>
-      <nav>
-        <ul class="nav-container">
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="../contact page/index.html">Contact us</a></li>
-          <li><a href="../sign up page/sign-up.html">Register</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="signin-container">
-        <img src="../../images/logo.png" alt="Website Logo" class="Technovation logo" />
-        <form class="signin-form">
-          <h2>Sign in to your account</h2>
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
-          <a id="forget-password" href="../forgot-password/forgot-password.html"
-            >Forgot your password?</a
-          >
-          <button type="submit">Continue</button>
-          <p>
-            Don't have an account?
-            <a href="../sign up page/sign-up.html">Sign up</a>
-          </p>
-        </form>
-      </section>
-    </main>
-    <footer>
-         <p>Copyright &copy;</p>
-    </footer>
+    </div>
+  </header>
+  <main>
+    <section class="signin-container">
+      <img src="../../images/logo.png" alt="Website Logo" class="Technovation logo" />
+      <form class="signin-form">
+        <h2>Sign in to your account</h2>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <a id="forget-password" href="../forgot-password/forgot-password.html">Forgot your password?</a>
+        <button type="submit">Continue</button>
+        <p>
+          Don't have an account?
+          <a href="../sign up page/sign-up.html">Sign up</a>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy;</p>
+  </footer>
 </body>
+
 </html>
