@@ -37,6 +37,8 @@ header {
   font-size: 18px;
   padding: 5px 8rem;
   z-index: 1000;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 header div p {
@@ -71,16 +73,18 @@ header div p {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 footer {
-  margin-top: 6rem;
   background-color: var(--secondary-color);
   color: var(--background-color);
-  padding: 2rem 0rem;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 0;
   width: 100%;
+  margin-top: auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .dropdown:hover a {
@@ -101,6 +105,7 @@ html, body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .logo {
@@ -114,6 +119,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Main section styling */
@@ -123,10 +133,12 @@ main {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  min-height: 100vh;
+  text-align: center;
   flex: 1;
   padding: 0 20px;
+  max-width: 1024px;
   margin-top: 10rem;
+  width: 100%;
 }
 
 .logo-img {
@@ -206,9 +218,6 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  footer {
-    margin-top: 10rem;
-  }
   .nav-container {
     display: none;
   }
@@ -219,12 +228,9 @@ main {
   .dropdown:hover .nav-container a:not(:first-child) {
     display: block;
   }
-  header {
-    padding: 5px 5rem;
-    font-size: 14px;
-  }
-  .register-container {
-    display: none;
+
+  .signin-container{
+    margin-top: 60px;
   }
   .logo-container img {
     height: 25px;
@@ -235,22 +241,24 @@ main {
   .signin-form {
     padding: 20px;
   }
+  header,
+  main,
+  footer {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .logo-container p {
     font-size: 12px;
   }
   .logo-container img {
     height: 20px;
   }
-  header {
-    padding: 5px 3rem;
-    font-size: 12px;
-  }
 
-  .register-container {
-    display: none;
+  .signin-container{
+    margin-top: 55px;
   }
 
   .signin-form {
@@ -264,19 +272,22 @@ main {
   .signin-form button {
     font-size: 14px;
   }
-
+  header,
+  main,
   footer {
-    margin-top: auto;
+    max-width: 425px;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1024px) {
+  header,
+  main,
   footer {
-    position: absolute;
-    bottom: 0;
+    max-width: 1024px;
+    margin: 0 auto;
   }
   .signin-container{
-    margin-top: 0;
     min-height: 100vh;
   }
 }
