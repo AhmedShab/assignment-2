@@ -36,20 +36,6 @@ Open the `index.html` file in your web browser to view the website.
 
 
 ## File Structure
-html-web/
-├── index.html
-├── pages/
-│   ├── contact page/
-│   │   └── index.html
-│   ├── forget password/
-│   │   └── forgot-password.html
-│   ├── sign in page/
-│   │   └── sign-in.html
-│   └── sign up page/
-│       └── sign-up.html
-└── images/
-
-
 - **index.html**: The main landing page of the website.
 - **pages/contact page/index.html**: The contact us page.
 - **pages/sign in page/sign-in.html**: The sign-in page.

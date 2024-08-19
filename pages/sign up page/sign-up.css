@@ -110,9 +110,8 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1;
-  margin: 0;
+  margin-top: 10rem;
   padding: 0 20px;
-  min-height: 100vh;
 }
 
 .logo-img {
@@ -251,9 +250,7 @@ main {
   .register-container {
     display: none;
   }
-  .signup-container {
-    margin-top: 10px;
-  }
+
 
   .signup-form {
     padding: 15px;
@@ -269,14 +266,22 @@ main {
 }
 
 footer {
+  margin-top: 6rem;
   background-color: var(--secondary-color);
   color: var(--background-color);
   padding: 2rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
+}
+@media (min-width: 1800px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .signup-container{
+    margin-top: 0;
+    min-height: 100vh;
+  }
 }
