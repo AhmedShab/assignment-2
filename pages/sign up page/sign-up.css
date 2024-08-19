@@ -22,9 +22,9 @@ button:hover {
   transition: opacity 500ms, transform 500ms;
   transform: scale(1.1);
 }
+
 /* Header styling */
 
-/* Ensure all elements use border-box sizing */
 *,
 *::before,
 *::after {
@@ -42,7 +42,7 @@ header {
   color: var(--background-color);
   font-size: 18px;
   padding: 5px 8rem;
-  z-index: 1000; /* Ensure header is on top of other content */
+  z-index: 1000; 
 }
 
 header div p {
@@ -84,7 +84,7 @@ header div p {
 }
 
 /* General body styling */
-body {
+html, body {
   background-color: var(--light-background-color);
   font-family: "Roboto", sans-serif;
   margin: 0;

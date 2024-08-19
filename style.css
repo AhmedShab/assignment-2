@@ -3,6 +3,9 @@
   --secondary-color: #1f2937;
   --background-color: #e5e7eb;
   --light-background-color: #f9faf8;
+  --header-height: 60px;
+  --footer-height: 60px;
+
 }
 
 /* how to use variables */
