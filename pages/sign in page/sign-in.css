@@ -79,6 +79,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  left: 0;
   width: 100%;
 }
 
@@ -121,6 +122,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  min-height: 100vh;
   flex: 1;
   padding: 0 20px;
   margin-top: 10rem;
@@ -194,6 +197,13 @@ main {
   text-decoration: none;
 }
 
+#forget-password {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   footer {
@@ -203,11 +213,11 @@ main {
     display: none;
   }
   .dropdown {
-    display: block; /* Show dropdown on mobile */
+    display: block;
   }
 
   .dropdown:hover .nav-container a:not(:first-child) {
-    display: block; /* Show other links when dropdown is hovered */
+    display: block;
   }
   header {
     padding: 5px 5rem;
@@ -254,13 +264,10 @@ main {
   .signin-form button {
     font-size: 14px;
   }
-}
 
-#forget-password {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
+  footer {
+    margin-top: auto;
+  }
 }
 
 @media (min-width: 1800px) {

@@ -195,17 +195,28 @@ main {
   text-decoration: none;
 }
 
+footer {
+  margin-top: 6rem;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-container {
     display: none;
   }
   .dropdown {
-    display: block; /* Show dropdown on mobile */
+    display: block;
   }
 
   .dropdown:hover .nav-container a:not(:first-child) {
-    display: block; /* Show other links when dropdown is hovered */
+    display: block; 
   }
   header {
     padding: 5px 5rem;
@@ -232,6 +243,10 @@ main {
 
   .name-fields input {
     margin-bottom: 10px;
+  }
+
+  footer {
+    margin-top: 10rem;
   }
 }
 
@@ -263,18 +278,12 @@ main {
   .signup-form button {
     font-size: 14px;
   }
+
+  footer {
+    margin-top: auto;
+  }
 }
 
-footer {
-  margin-top: 6rem;
-  background-color: var(--secondary-color);
-  color: var(--background-color);
-  padding: 2rem 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 @media (min-width: 1800px) {
   footer {
     position: absolute;
