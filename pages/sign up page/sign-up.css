@@ -275,3 +275,13 @@ footer {
   align-items: center;
   width: 100%;
 }
+@media (min-width: 1800px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .signup-container{
+    margin-top: 0;
+    min-height: 100vh;
+  }
+}
