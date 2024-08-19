@@ -126,7 +126,6 @@ main {
   min-height: 100vh;
   flex: 1;
   padding: 0 20px;
-  margin-top: 10rem;
 }
 
 .logo-img {
@@ -206,9 +205,6 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  footer {
-    margin-top: 10rem;
-  }
   .nav-container {
     display: none;
   }
