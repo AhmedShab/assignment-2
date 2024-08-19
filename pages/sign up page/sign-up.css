@@ -299,6 +299,14 @@ footer {
   .signup-form button {
     font-size: 14px;
   }
+
+  .signup-container{
+    margin-top: 0;
+    min-height: 100vh;
+  }
+  footer {
+    margin-top: 5rem;
+  }
 }
 
 @media (min-width: 1024px) {
