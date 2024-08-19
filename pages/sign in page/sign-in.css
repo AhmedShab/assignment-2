@@ -17,9 +17,8 @@ button:hover {
   transition: opacity 500ms, transform 500ms;
   transform: scale(1.1);
 }
-/* Header styling */
 
-/* Ensure all elements use border-box sizing */
+/* Header styling */
 *,
 *::before,
 *::after {
@@ -37,7 +36,7 @@ header {
   color: var(--background-color);
   font-size: 18px;
   padding: 5px 8rem;
-  z-index: 1000; /* Ensure header is on top of other content */
+  z-index: 1000;
 }
 
 header div p {
@@ -72,6 +71,16 @@ header div p {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+footer {
+  margin-top: 6rem;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 .dropdown:hover a {
   background-color: var(--primary-color);
@@ -84,7 +93,7 @@ ul {
 }
 
 /* General body styling */
-body {
+html, body {
   background-color: var(--light-background-color);
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -102,6 +111,9 @@ body {
 
 main{
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Main section styling */
@@ -188,6 +200,9 @@ main{
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  footer {
+    margin-top: 10rem;
+  }
   .nav-container {
     display: none;
   }
